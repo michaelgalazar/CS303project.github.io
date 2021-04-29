@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="home.css" type="text/css" rel="stylesheet" />
+  <script src="home.js"></script>
+
+  <h2 id="greeting"></h2>
+  <a href=webPage.html>Logout</a>
+  <script>
+    if (new Date().getHours() < 12) {
+      document.getElementById("greeting").innerHTML = "Good Morning";
+    }
+    else {
+      document.getElementById("greeting").innerHTML = "Good Evening";
+    }
+  </script>
+</head>
+
+<body>
+  <p><a id="userName" href="webPage.html"></a></p>
+  <ul>
+    <li><button class="" onclick="display2(), getUserDetails()">Profile</button></li>
+    <li><button class="" onclick="coursesDisplay()">Courses</button></li>
+    <li><button onclick="display3(), getStudentGPA()">GPA</button></li>
+    <li><button>Admin</button></li>
+    <li style="float:right"><button class="active" onclick="display1()">Update Profile</button></li>
+  </ul><br>
+
+  <input type="text" id="myInput" name="input" placeholder="Search Courses..." />
+  <button onclick="searchCourses()">Search</button>
+
+
+  <div id="profile">
+    <Form>
+      <p>Profile</p>
+      <label for="">Enter ID:</label><br>
+      <input type="text" id="myId" name="" value=""><br><br>
+      <input type="button" onclick="getUserDetails()" value="View Profile">
+      <input type="button" onclick="hide2()" value="Close">
+    </Form><br>
+  </div><br>
+
+  <div  id="about">
+    <Form action="output">
+      <p>Update Profile</p>
+      <h id = "result"></h><br><br>
+      <label for="">Enter ID:</label><br>
+      <input type="text" id="inputId" name="" value=""><br>
+      <label for="">Enter new Password:</label><br>
+      <input type="" id="newP" name="" value=""><br>
+      <label for="">Confirm new Password:</label><br>
+      <input type="text" id="cNewP" name="" value=""><br><br>
+      <input type="button" onclick="updateProfile()" value="Submit">
+      <input type="button" onclick="hide1()" value="Close">
+    </Form><br>
+  </div><br>
+  
+  <div id="gpa">
+    <Form >
+      <p>GPA</p>
+      <label for="">Enter ID:</label><br>
+      <input type="text" id="myId" name="" value=""><br><br>
+      <input type="button" onclick="getUserGPA()" value="View GPA">
+      <input type="button" onclick="hide3()" value="Close">
+    </Form><br>
+  </div><br>
+
+  <p id="output"></p>
+
+</body>
+
+</html>

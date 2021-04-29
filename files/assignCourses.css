@@ -1,0 +1,47 @@
+body{
+    background-color: #56baed;
+}
+div{
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        padding: 30px;
+        width: 90%;
+        max-width: 550px;
+        position: relative;
+        padding: 0px;
+        -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        text-align: center;
+      }
+      button {
+          font-family:'Times New Roman', Times, serif;
+          font-size: 30px;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        animation-delay: 1s;
+        background-color:  #fff;
+        
+      }
+      input{
+          padding: 5px;
+          font-size: 25px;
+      }
+      #center{
+          margin-top: 300px;
+          margin-left: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        justify-content: center;
+        width: 100%;
+        min-height: 100%;
+        padding: 20px;
+      }
+  p{
+    font-size: 35px;
+  }
+
+  #out{
+    font-size: 40px;
+  }

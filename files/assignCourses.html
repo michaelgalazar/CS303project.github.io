@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="assignCourses.css" type="text/css" rel="stylesheet" />
+    <script src="home.js"></script>
+<a href= admin.html>Back</a>
+</head>
+
+<body>
+    <button class="" onclick="coursesDisplay()">Courses</button>
+    <p id="output"></p>
+    
+    <div id="center">
+        <h1>Assign Course</h1>
+        <div>
+            <input id="stuID" type="text" placeholder="Student Id" required /><br>
+            <input id="courseName" type="text" placeholder="Course Name" required /><br><br>
+            <button onclick="assignCourse()">submit</button>
+            <h2 id="course"></h2>
+        </div>
+    </div>
+
+    <div id="center">
+        <h1>View Student Courses</h1>
+        <div>            
+            <input id="studentId" type="text" placeholder="Enter Student Id" required/><br><br>
+            <button onclick="viewCourse()">submit</button>
+            <h2 id="view"></h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

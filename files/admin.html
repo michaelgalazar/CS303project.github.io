@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="home.css" type="text/css" rel="stylesheet" />
+    <script src="home.js"></script>
+
+    <h2 id="greeting"></h2>
+    <a href = webPage.html>Logout</a>
+    <p></p>
+  <script>
+    if (new Date().getHours() < 12) {
+      document.getElementById("greeting").innerHTML = "Good Morning";
+    }
+    else {
+      document.getElementById("greeting").innerHTML = "Good Evening";
+    }
+  </script>
+
+</head>
+
+<body>
+    <ul>
+        <li><button id="drop">Profile</button></li>
+        <li><button>Faculty</button></li>
+        <li><button>Admin</button></li>
+        <li><a href="assignCourses.html"><button>Course</button></a></li>
+        <li style="float:right"><button class="active" href="#about">Update Profile</button></li>
+    </ul>
+
+<div>
+  <button onclick="sortByFName()()">Sort students by first name</button><br><br>
+  <button onclick="sortByLName()()">Sort student by last name</button><br><br>
+  <button onclick="sortByfName()()">Sort faculty by first name</button><br><br>
+  <button onclick="sortBylName()()">Sort faculty by last name</button><br><br>
+</div><br>        
+<p id="output"></p>
+</body>
+
+</html>
